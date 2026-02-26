@@ -3,7 +3,7 @@ import { useRef } from "react";
 import {
     SiReact, SiTypescript, SiJavascript, SiTailwindcss,
     SiSpring, SiMysql, SiOracle, SiGit,
-    SiNodedotjs, SiCss3, SiHtml5, SiPostgresql, SiVite,
+    SiNodedotjs, SiCss3, SiHtml5, SiPostgresql, SiVite, SiPython,
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 import { SiOpenai, SiGooglegemini } from "react-icons/si";
@@ -31,14 +31,15 @@ const techTags = [
     { icon: SiPostgresql, label: "PostgreSQL", color: "text-sky-500" },
     { icon: SiGit, label: "Git", color: "text-orange-500" },
     { icon: SiVite, label: "Vite", color: "text-purple-400" },
+    { icon: SiPython, label: "Python", color: "text-yellow-300" },
     { icon: TbApi, label: "APIs", color: "text-emerald-400" },
 ];
 
 const skillBars = [
     { label: "Front-end", level: 90 },
     { label: "Back-end", level: 80 },
-    { label: "Banco de Dados", level: 70 },
-    { label: "DevOps / Infra", level: 65 },
+    { label: "DevOps / Infra", level: 70 },
+    { label: "Banco de Dados", level: 60 },
 ];
 
 function SkillBar({ label, level, delay }: { label: string; level: number; delay: number }) {

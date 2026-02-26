@@ -10,8 +10,8 @@ const fadeUp = (delay: number) => ({
 
 const stats = [
     { value: "3+", label: "Anos de experiência" },
-    { value: "End-to-End", label: "Visão de Produto" },
-    { value: "100%", label: "Movido a desafios" },
+    { value: "ADS", label: "Formação" },
+    { value: "Full", label: "Stack" },
 ];
 
 export default function AboutSection() {
