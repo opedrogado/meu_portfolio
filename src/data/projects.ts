@@ -31,14 +31,14 @@ export const projects: Project[] = [
         image: siteInstitucional,
         techs: ["React", "Vite", "Tailwind", "Framer Motion"],
         github: "https://github.com/opedrogado/projeto_site_institucional",
-        live: "modelo-site-institucional-pg.vercel.app",
+        live: "https://modelo-site-institucional-pg.vercel.app/",
     },
     {
         title: "Loja do Hardware",
         description: "É uma aplicação web de e-commerce voltada para a venda de componentes de hardware para computadores, possuí catálogo de produtos (via DB), Carrinho de compras e fluxo de pagamento, cadastro e login de usuários com perfil editável, painel adm, rotas protegidas para usuários autenticados e entre outros detalhes. Desenvolvida como projeto pessoal/estudo. Para este projeto gerei o apk via TWA, para testa-lo no android também. Atualmente o DB está off.",
         image: lojaDoHardware,
         techs: ["React", "Node.js", "MySQL", "SPA"],
-        github: "https://github.com/opedrogado/projeto_site_institucional",
+        github: "https://github.com/opedrogado/Loja-Do-Hardware-BETA",
         live: "https://loja-do-hardware.vercel.app/",
     },
     {
