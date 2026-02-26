@@ -11,6 +11,14 @@ const fadeUp = (delay: number) => ({
 });
 
 function VideoDialog({ videoId, onClose }: { videoId: string; onClose: () => void }) {
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+    if (isMobile) {
+        window.open(`https://www.youtube.com/watch?v=${videoId}`, "_blank");
+        onClose();
+        return null;
+    }
+
     return (
         <div
             className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm"
