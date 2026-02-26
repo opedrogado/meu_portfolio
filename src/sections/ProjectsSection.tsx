@@ -166,27 +166,28 @@ export default function ProjectsSection() {
                         <ProjectCard key={project.title} project={project} index={i} />
                     ))}
                 </div>
+
+                {/* Outros projetos */}
+                <motion.div
+                    {...fadeUp(0.3)}
+                    className="mt-16 flex flex-col items-center gap-4 rounded-2xl border border-slate-800 bg-slate-900/40 px-8 py-10 text-center"
+                >
+                    <FiGithub className="text-3xl text-slate-500" />
+                    <p className="text-slate-400 max-w-lg text-sm leading-relaxed">
+                        Além dos projetos acima, tenho diversos outros projetos menores no meu GitHub — estudos, experimentos e ferramentas que não cabem aqui, mas o código está disponível.
+                    </p>
+                    <a
+                        href="https://github.com/opedrogado"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-1 flex items-center gap-2 rounded-lg border border-slate-700 px-5 py-2.5 text-sm font-medium text-slate-300 transition hover:border-violet-500/50 hover:text-violet-400"
+                    >
+                        <FiGithub className="text-base" />
+                        Ver no GitHub
+                    </a>
+                </motion.div>
             </div>
 
-            {/* Outros projetos */}
-            <motion.div
-                {...fadeUp(0.3)}
-                className="mt-16 flex flex-col items-center gap-4 rounded-2xl border border-slate-800 bg-slate-900/40 px-8 py-10 text-center"
-            >
-                <FiGithub className="text-3xl text-slate-500" />
-                <p className="text-slate-400 max-w-lg text-sm leading-relaxed">
-                    Além dos projetos acima, tenho diversos outros projetos menores no meu GitHub — estudos, experimentos e ferramentas que não cabem aqui, mas o código está disponível.
-                </p>
-                <a
-                    href="https://github.com/opedrogado"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-1 flex items-center gap-2 rounded-lg border border-slate-700 px-5 py-2.5 text-sm font-medium text-slate-300 transition hover:border-violet-500/50 hover:text-violet-400"
-                >
-                    <FiGithub className="text-base" />
-                    Ver no GitHub
-                </a>
-            </motion.div>
 
         </section>
     );

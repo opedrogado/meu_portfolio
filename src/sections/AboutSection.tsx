@@ -1,5 +1,6 @@
 import { motion, useInView, type Easing } from "framer-motion";
 import { useRef } from "react";
+import imagemEu from "../assets/img/imagemEu.jpg";
 
 const fadeUp = (delay: number) => ({
     initial: { opacity: 0, y: 30 },
@@ -8,11 +9,20 @@ const fadeUp = (delay: number) => ({
     transition: { duration: 0.6, delay, ease: "easeOut" as Easing },
 });
 
+const calcAge = (birth: Date) => {
+    const today = new Date();
+    let age = today.getFullYear() - birth.getFullYear();
+    const m = today.getMonth() - birth.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birth.getDate())) age--;
+    return age;
+};
+
 const stats = [
     { value: "3+", label: "Anos de experiência" },
     { value: "ADS", label: "Formação" },
-    { value: "Full", label: "Stack" },
+    { value: `${calcAge(new Date(2003, 10, 11))}`, label: "Idade" },
 ];
+
 
 export default function AboutSection() {
     const ref = useRef(null);
@@ -68,7 +78,7 @@ export default function AboutSection() {
                     >
                         {/* Placeholder foto */}
                         <img
-                            src="https://media.licdn.com/dms/image/v2/D4D03AQH_yuifbo83oQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1676634917557?e=1773878400&v=beta&t=lZmEUZBvh8O5aZYxgr93GXCPvBC_pcqp-IIXnUS7ogw"
+                            src={imagemEu}
                             alt="Pedro Gado"
                             className="mb-8 h-100 w-full rounded-xl object-cover object-top"
                         />
