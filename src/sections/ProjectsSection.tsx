@@ -28,8 +28,8 @@ function VideoDialog({ videoId, onClose }: { videoId: string; onClose: () => voi
                 </button>
                 <div className="aspect-video w-full overflow-hidden rounded-xl shadow-2xl">
                     <iframe
-                        src={`https://www.youtube.com/embed/${videoId}?autoplay=1&origin=${window.location.origin}`}
-                        allow="autoplay; encrypted-media"
+                        src={`https://www.youtube.com/embed/${videoId}?rel=0&playsinline=1`}
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
                         className="h-full w-full"
                     />

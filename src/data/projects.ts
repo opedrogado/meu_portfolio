@@ -31,7 +31,7 @@ export const projects: Project[] = [
         image: siteInstitucional,
         techs: ["React", "Vite", "Tailwind", "Framer Motion"],
         github: "https://github.com/opedrogado/projeto_site_institucional",
-        live: "https://issastudiocriativo.vercel.app/",
+        live: "modelo-site-institucional-pg.vercel.app",
     },
     {
         title: "Loja do Hardware",
