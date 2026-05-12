@@ -25,7 +25,7 @@ const socials = [
     {
         icon: FiMail,
         label: "E-mail",
-        href: "mailto:contato.pedrogado@gmail.com",
+        href: "mailto:contato.pedro.gado03@gmail.com",
         color: "hover:text-violet-400 hover:border-violet-500/40",
     },
 ];
