@@ -1,6 +1,6 @@
 import { motion, useInView, type Easing } from "framer-motion";
 import { useRef } from "react";
-import imagemEu from "../assets/img/imagemEu.jpg";
+import imagemProfile from "../assets/img/photo_profile.jpeg";
 
 const fadeUp = (delay: number) => ({
     initial: { opacity: 0, y: 30 },
@@ -18,7 +18,7 @@ const calcAge = (birth: Date) => {
 };
 
 const stats = [
-    { value: "3+", label: "Anos de experiência" },
+    { value: `${new Date().getFullYear() - 2023}+`, label: "Anos de experiência" },
     { value: "ADS", label: "Formação" },
     { value: `${calcAge(new Date(2003, 10, 11))}`, label: "Idade" },
 ];
@@ -52,7 +52,7 @@ export default function AboutSection() {
                         </motion.h2>
 
                         <motion.p {...fadeUp(0.2)} className="text-base leading-relaxed text-slate-400">
-                            Com mais de três anos de experiência transformando lógica em soluções reais, o que mais me fascina na programação é o poder de criar algo do zero para automatizar tarefas e facilitar a vida das pessoas. Minha principal força está no front-end, onde busco sempre o equilíbrio perfeito entre um visual impactante e uma usabilidade impecável. No entanto, minha bagagem sólida no back-end me permite entender e construir a aplicação de ponta a ponta. Hoje, meu principal objetivo é expandir meus horizontes além de Nova Prata, buscando desafios remotos em empresas de grande porte onde eu possa entregar valor em escala.
+                            Com mais de {new Date().getFullYear() - 2023} anos de experiência transformando lógica em soluções reais, o que mais me fascina na programação é o poder de criar algo do zero para automatizar tarefas e facilitar a vida das pessoas. Minha principal força está no front-end, onde busco sempre o equilíbrio perfeito entre um visual impactante e uma usabilidade impecável. No entanto, minha bagagem sólida no back-end me permite entender e construir a aplicação de ponta a ponta. Hoje, meu principal objetivo é expandir meus horizontes além de Nova Prata, buscando desafios remotos em empresas de grande porte onde eu possa entregar valor em escala.
                         </motion.p>
 
                         <motion.p {...fadeUp(0.3)} className="text-base leading-relaxed text-slate-400">
@@ -78,7 +78,7 @@ export default function AboutSection() {
                     >
                         {/* Placeholder foto */}
                         <img
-                            src={imagemEu}
+                            src={imagemProfile}
                             alt="Pedro Gado"
                             className="mb-8 h-100 w-full rounded-xl object-cover object-top"
                         />

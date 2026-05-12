@@ -1,6 +1,5 @@
 import siteInstitucional from "../assets/projects/site_institucional.png";
 import lojaDoHardware from "../assets/projects/loja_do_hardware.png";
-import sistemaAP from "../assets/projects/sistemaAP.png";
 import portfolio from "../assets/projects/portfolio.png";
 import coldWallet from "../assets/projects/coldWallet.webp";
 import botsPython from "../assets/projects/botsPython.png";
@@ -19,11 +18,11 @@ export type Project = {
 export const projects: Project[] = [
     {
         title: "Sistema gestão comercial (em desenvolvimento)",
-        description: "Sistema web de gestão comercial desenvolvido para a empresa Auto Pratense. A aplicação centraliza operações de atendimento, vendas e pós-venda em uma interface moderna e responsiva. Foi desenvolvido para substituir um sistema legado em Java 7. Atuei como um dos responsáveis pela definição da stack, arquitetura de componentes, design system da interface e posteriormente, desenvolvimento das rotinas. Por motivos óbvios de direitos reservados da empresa, disponibilizarei apenas um vídeo do funcionamento.",
-        image: sistemaAP,
+        description: "Sistema web de gestão comercial. A aplicação centraliza operações de atendimento, vendas e pós-venda em uma interface moderna e responsiva. Foi desenvolvido para substituir um sistema legado em Java 7. Atuei como um dos responsáveis pela definição da stack, arquitetura de componentes, design system da interface e posteriormente, desenvolvimento das rotinas. Por motivos óbvios de direitos reservados da empresa, disponibilizarei apenas um vídeo do funcionamento.",
+        image: "https://img.youtube.com/vi/l5jQnq--0KY/maxresdefault.jpg",
         techs: ["React", "Vite", "Tailwind", "shadcn/ui + Radix UI", "Zustand", "Axios", "PWA", "SPA"],
-        live: "https://www.youtube.com/watch?v=yHcRSbPtPsc",
-        videoUrl: "yHcRSbPtPsc",
+        live: "https://www.youtube.com/watch?v=l5jQnq--0KY",
+        videoUrl: "l5jQnq--0KY",
     },
     {
         title: "Site Institucional",
